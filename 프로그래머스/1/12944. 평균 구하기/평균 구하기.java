@@ -9,6 +9,7 @@ class Solution {
             } */
             
             // double sum = Arrays.stream(arr).sum();
+            //Arrays.stream(arr).sum()/(double)arr.length;
             return Arrays.stream(arr).sum()/(double)arr.length;
             
                 
