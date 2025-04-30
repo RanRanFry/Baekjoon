@@ -5,9 +5,11 @@ class Solution {
         for(int i=0; i<absolutes.length; i++){
             if(!signs[i]){
                 sum += absolutes[i]* (-1);
-                continue;
+                
+            }else{
+                sum += absolutes[i];
             }
-            sum += absolutes[i];
+            
         }
         
         int answer = sum;
