@@ -2,7 +2,7 @@ class Solution {
     public String solution(String s) {
         
         /*
-        String [] str = s.split(" ");
+        String [] str = s.split(" ", -1);
         
         StringBuilder result = new StringBuilder();
         for(int i=0; i<str.length; i++){
@@ -23,15 +23,16 @@ class Solution {
             }
             
             
-        }
+        } 
+       
         
         
         // String answer = str.join(" ");
         return result.toString();
+         */
         
-        */
         
-         String[] words = s.split(" ", -1);  // 공백 여러 개도 보존
+         String[] words = s.split(" ",-1);  // 공백 여러 개도 보존
     String result = "";
 
     for (int i = 0; i < words.length; i++) {
@@ -53,6 +54,7 @@ class Solution {
         }
     }
 
-    return result;
+    return result; 
+    
     }
 }
