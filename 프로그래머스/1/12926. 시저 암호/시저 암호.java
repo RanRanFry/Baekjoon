@@ -20,10 +20,19 @@ class Solution {
             }
         }
         
+        /*
         String answer = "";
         for(char c: arr){
             answer +=  c;
+        
         }
         return answer;
+        */
+        StringBuilder ans = new StringBuilder();
+        for(char c: arr){
+            ans.append(c);
+        }
+        
+        return ans.toString(); //최대 0.93
     }
 }
