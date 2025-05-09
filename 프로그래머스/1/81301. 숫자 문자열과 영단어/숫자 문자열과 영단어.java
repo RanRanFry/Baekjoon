@@ -7,20 +7,40 @@ class Solution {
 
             if (Character.isDigit(current)) {
                 sb.append(current);
-            } else if (i + 2 <= s.length()) {
+            } else if (i + 1 < s.length()) {  // substring(i, i+2)를 안전하게 사용
                 String sub = s.substring(i, i + 2);
 
                 switch (sub) {
-                    case "ze": sb.append(0); i += 3; break;  // "zero"
-                    case "on": sb.append(1); i += 2; break;  // "one"
-                    case "tw": sb.append(2); i += 2; break;  // "two"
-                    case "th": sb.append(3); i += 4; break;  // "three"
-                    case "fo": sb.append(4); i += 3; break;  // "four"
-                    case "fi": sb.append(5); i += 2; break;  // "five"
-                    case "si": sb.append(6); i += 2; break;  // "six"
-                    case "se": sb.append(7); i += 4; break;  // "seven"
-                    case "ei": sb.append(8); i += 4; break;  // "eight"
-                    case "ni": sb.append(9); i += 3; break;  // "nine"
+                    case "on":
+                        sb.append(1);
+                        break;
+                    case "tw":
+                        sb.append(2);
+                        break;
+                    case "th":
+                        sb.append(3);
+                        break;
+                    case "fo":
+                        sb.append(4);
+                        break;
+                    case "fi":
+                        sb.append(5);
+                        break;
+                    case "si":
+                        sb.append(6);
+                        break;
+                    case "se":
+                        sb.append(7);
+                        break;
+                    case "ei":
+                        sb.append(8);
+                        break;
+                    case "ni":
+                        sb.append(9);
+                        break;
+                    case "ze":
+                        sb.append(0);
+                        break;
                 }
             }
         }
