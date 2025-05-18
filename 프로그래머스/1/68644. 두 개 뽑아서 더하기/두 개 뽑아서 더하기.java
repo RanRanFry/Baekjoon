@@ -7,7 +7,7 @@ class Solution {
         
         for(int i=0; i<numbers.length-1; i++){
             int indexSum=0;
-            for(int j=i+1; j<numbers.length; j++){
+            for(int j=numbers.length-1; j>=i+1; j--){
                 indexSum = numbers[i] + numbers[j];
                 if(!list.contains(indexSum)){
                     list.add(indexSum);
