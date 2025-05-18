@@ -5,7 +5,7 @@ class Solution {
         List <Integer> list = new ArrayList<>();
         
         
-        for(int i=0; i<numbers.length; i++){
+        for(int i=0; i<numbers.length-1; i++){
             int indexSum=0;
             for(int j=i+1; j<numbers.length; j++){
                 indexSum = numbers[i] + numbers[j];
